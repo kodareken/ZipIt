@@ -1,0 +1,4 @@
+module SWCompression {
+    header "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SWCompression-Swift.h"
+    requires objc
+}

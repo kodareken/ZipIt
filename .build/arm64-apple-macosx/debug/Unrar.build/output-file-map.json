@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/master.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Archive.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Entry.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Error.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.swiftdeps"
+  }
+}

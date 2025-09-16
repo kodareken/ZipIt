@@ -1,0 +1,77 @@
+{
+  "": {
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/master.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.swiftdeps"
+  }
+}

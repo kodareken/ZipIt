@@ -1,0 +1,4 @@
+module Gzip {
+    header "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Gzip-Swift.h"
+    requires objc
+}

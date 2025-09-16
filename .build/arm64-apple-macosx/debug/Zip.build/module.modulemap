@@ -1,0 +1,4 @@
+module Zip {
+    header "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h"
+    requires objc
+}

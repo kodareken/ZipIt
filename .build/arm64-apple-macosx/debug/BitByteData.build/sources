@@ -1,0 +1,12 @@
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift
+/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift
+/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/master.swiftdeps"
+  },
+  "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/Gzip/Data+Gzip.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.swiftdeps"
+  }
+}

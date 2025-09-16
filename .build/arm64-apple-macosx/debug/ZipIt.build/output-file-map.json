@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/master.swiftdeps"
+  },
+  "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swiftdeps"
+  },
+  "/Users/admin/ZipIt/ZipIt/ContentView.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swiftdeps"
+  },
+  "/Users/admin/ZipIt/ZipIt/ZipItApp.swift": {
+    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.d",
+    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o",
+    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swiftdeps"
+  }
+}

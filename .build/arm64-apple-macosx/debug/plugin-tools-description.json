@@ -1,0 +1,3908 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData_BitByteData.bundle/PrivacyInfo.xcprivacy" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/PrivacyInfo.xcprivacy"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData_BitByteData.bundle/PrivacyInfo.xcprivacy"
+        }
+      ]
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression_SWCompression.bundle/PrivacyInfo.xcprivacy" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/PrivacyInfo.xcprivacy"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression_SWCompression.bundle/PrivacyInfo.xcprivacy"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.BitByteData-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<BitByteData-arm64-apple-macosx15.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "BitByteData",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/BitByteData.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitByteData-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/BitByteData.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift",
+        "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Gzip-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/Gzip/Data+Gzip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/system_zlib.build/anchor.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Gzip",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Gzip.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Gzip-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Gzip.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/Gzip/Data+Gzip.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SWCompression-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder+Equatable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoderInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFileInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFolder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zPackInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zProperty.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zStreamInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zSubstreamInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/CompressionMethod+7z.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/MsbBitReader+7z.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+BlockSize.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Lengths.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BurrowsWheeler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/SuffixArray.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Archive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CheckSums.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/Code.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/CodeLength.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/DecodingTree.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/EncodingTree.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionAlgorithm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionMethod.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Container.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/DosAttributes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Permissions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DataError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DecompressionAlgorithm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DeltaFilter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/FileSystemType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Constants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Lengths.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/DeflateError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/FileSystemType+Gzip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader+ExtraField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/XxHash32.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMABitTreeDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAConstants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMADecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMALenDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAProperties.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMARangeDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Decoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/ContainerEntryType+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/Data+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/LittleEndianByteReader+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarCreateError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarExtendedHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/ByteReader+XZ.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/Sha256.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZBlock.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZStreamHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/BuiltinExtraFields.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/CompressionMethod+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/FileSystemType+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/LittleEndianByteReader+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipCentralDirectoryEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEndOfCentralDirectory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfoHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipExtraField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipLocalHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<SWCompression-arm64-apple-macosx15.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/BitByteData.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SWCompression",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/SWCompression.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder+Equatable.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoderInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zContainer.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntryInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFileInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFolder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zPackInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zProperty.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zStreamInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zSubstreamInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+7z.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/MsbBitReader+7z.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+BlockSize.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Compress.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Lengths.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2Error.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BurrowsWheeler.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SuffixArray.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Archive.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CheckSums.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Code.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CodeLength.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecodingTree.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/EncodingTree.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionAlgorithm.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Container.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DosAttributes.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Permissions.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DataError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecompressionAlgorithm.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeltaFilter.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Extensions.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Compress.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Constants.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Lengths.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeflateError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Gzip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipArchive.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader+ExtraField.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4+Compress.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XxHash32.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMABitTreeDecoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAConstants.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMADecoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMALenDecoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAProperties.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMARangeDecoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Decoder.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Error.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType+Tar.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Data+Tar.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Tar.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarContainer.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarCreateError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntryInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarExtendedHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarParser.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarReader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarWriter.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ByteReader+XZ.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Sha256.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZArchive.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZBlock.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZStreamHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BuiltinExtraFields.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+Zip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Zip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Zip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipCentralDirectoryEntry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipContainer.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEndOfCentralDirectory.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfo.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfoHelper.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipExtraField.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipLocalHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibArchive.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibError.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibHeader.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SWCompression-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder+Equatable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoderInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFileInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFolder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zPackInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zProperty.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zStreamInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zSubstreamInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+7z.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/MsbBitReader+7z.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+BlockSize.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Lengths.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BurrowsWheeler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SuffixArray.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Archive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CheckSums.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Code.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CodeLength.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecodingTree.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/EncodingTree.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionAlgorithm.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Container.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DosAttributes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Permissions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DataError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecompressionAlgorithm.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeltaFilter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Constants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Lengths.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeflateError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Gzip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader+ExtraField.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XxHash32.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMABitTreeDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAConstants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMADecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMALenDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAProperties.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMARangeDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Decoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Data+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarCreateError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarExtendedHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ByteReader+XZ.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Sha256.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZBlock.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZStreamHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BuiltinExtraFields.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipCentralDirectoryEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEndOfCentralDirectory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfoHelper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipExtraField.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipLocalHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/SWCompression.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder+Equatable.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoderInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zContainer.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntryInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFileInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFolder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zPackInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zProperty.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zStreamInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zSubstreamInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/CompressionMethod+7z.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/MsbBitReader+7z.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+BlockSize.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Compress.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Lengths.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2Error.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BurrowsWheeler.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/SuffixArray.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Archive.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CheckSums.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/Code.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/CodeLength.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/DecodingTree.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/EncodingTree.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionAlgorithm.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionMethod.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Container.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryType.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/DosAttributes.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Permissions.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DataError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DecompressionAlgorithm.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DeltaFilter.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Extensions.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/FileSystemType.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Compress.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Constants.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Lengths.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/DeflateError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/FileSystemType+Gzip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipArchive.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader+ExtraField.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4+Compress.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/XxHash32.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMA.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMABitTreeDecoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAConstants.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMADecoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMALenDecoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAProperties.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMARangeDecoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Decoder.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Error.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/ContainerEntryType+Tar.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/Data+Tar.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/LittleEndianByteReader+Tar.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarContainer.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarCreateError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntryInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarExtendedHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarParser.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarReader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarWriter.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/ByteReader+XZ.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/Sha256.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZArchive.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZBlock.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZStreamHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/BuiltinExtraFields.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/CompressionMethod+Zip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/FileSystemType+Zip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/LittleEndianByteReader+Zip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipCentralDirectoryEntry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipContainer.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEndOfCentralDirectory.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfo.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfoHelper.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipExtraField.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipLocalHeader.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibArchive.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibError.swift",
+        "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibHeader.swift",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Unrar-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Archive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Entry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/archive.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/arcread.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/blake2s.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/cmddata.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/consio.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/crc.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/crypt.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/dll.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/encname.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/errhnd.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/extinfo.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/extract.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filcreat.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/file.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filefn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filestr.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/find.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/getbits.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/global.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/hash.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/headers.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/largepage.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/list.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/match.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/options.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/pathfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/qopen.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rar.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rarvm.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rawread.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rdwrfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/resource.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rijndael.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rs16.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/scantree.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/secpassword.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/sha1.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/sha256.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/smallfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/strfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/strlist.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/system.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/threadpool.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/timefn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/ui.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/unicode.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/unpack.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/volume.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Unrar",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Unrar.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Unrar-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Unrar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Archive.swift",
+        "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Entry.swift",
+        "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Error.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Zip-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/QuickZip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/ZipUtilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/ioapi.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/unzip.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/zip.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Zip",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Zip.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/minizip/include",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Zip.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/QuickZip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/Zip.swift",
+        "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/ZipUtilities.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ZipIt-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/sources",
+      "importPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ZipItApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Zip.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/SWCompression.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Gzip.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/Unrar.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "ZipIt",
+      "moduleOutputPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/ZipIt.swiftmodule",
+      "objects" : [
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/minizip/include",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include",
+        "-Xcc",
+        "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include",
+        "-module-cache-path",
+        "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "ZipIt_main",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "zipit"
+      ],
+      "outputFileMapPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules/ZipIt.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift",
+        "/Users/admin/ZipIt/ZipIt/ContentView.swift",
+        "/Users/admin/ZipIt/ZipIt/ZipItApp.swift"
+      ],
+      "tempsPath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "BitByteData" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "BitByteData",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift",
+      "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitByteData-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Gzip" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Gzip",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/Gzip/Data+Gzip.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Gzip-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SWCompression" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SWCompression",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder+Equatable.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoderInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zContainer.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntryInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFileInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFolder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zPackInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zProperty.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zStreamInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zSubstreamInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/CompressionMethod+7z.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/MsbBitReader+7z.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+BlockSize.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Compress.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Lengths.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2Error.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BurrowsWheeler.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/SuffixArray.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Archive.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CheckSums.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/Code.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/CodeLength.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/DecodingTree.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/EncodingTree.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionAlgorithm.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionMethod.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Container.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryType.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/DosAttributes.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Permissions.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DataError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DecompressionAlgorithm.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DeltaFilter.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Extensions.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/FileSystemType.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Compress.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Constants.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Lengths.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/DeflateError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/FileSystemType+Gzip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipArchive.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader+ExtraField.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4+Compress.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/XxHash32.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMA.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMABitTreeDecoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAConstants.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMADecoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMALenDecoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAProperties.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMARangeDecoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Decoder.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Error.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/ContainerEntryType+Tar.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/Data+Tar.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/LittleEndianByteReader+Tar.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarContainer.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarCreateError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntryInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarExtendedHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarParser.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarReader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarWriter.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/ByteReader+XZ.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/Sha256.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZArchive.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZBlock.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZStreamHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/BuiltinExtraFields.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/CompressionMethod+Zip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/FileSystemType+Zip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/LittleEndianByteReader+Zip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipCentralDirectoryEntry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipContainer.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEndOfCentralDirectory.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfo.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfoHelper.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipExtraField.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipLocalHeader.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibArchive.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibError.swift",
+      "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibHeader.swift",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SWCompression-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Unrar" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Unrar",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Archive.swift",
+      "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Entry.swift",
+      "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Error.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Unrar-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Zip" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Zip",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/QuickZip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/Zip.swift",
+      "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/ZipUtilities.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/minizip/include",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ZipIt" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ZipIt",
+      "-package-name",
+      "zipit",
+      "-incremental",
+      "-c",
+      "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift",
+      "/Users/admin/ZipIt/ZipIt/ContentView.swift",
+      "/Users/admin/ZipIt/ZipIt/ZipItApp.swift",
+      "-I",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/minizip/include",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/system-zlib/include",
+      "-Xcc",
+      "-fmodule-map-file=/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include",
+      "-module-cache-path",
+      "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "ZipIt_main",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "zipit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "BitByteData" : [
+
+    ],
+    "Cunrar" : [
+
+    ],
+    "Gzip" : [
+      "system_zlib"
+    ],
+    "Minizip" : [
+
+    ],
+    "SWCompression" : [
+      "BitByteData"
+    ],
+    "Unrar" : [
+      "Cunrar"
+    ],
+    "Zip" : [
+      "Minizip"
+    ],
+    "ZipIt" : [
+      "Unrar",
+      "Cunrar",
+      "Gzip",
+      "system_zlib",
+      "SWCompression",
+      "BitByteData",
+      "Zip",
+      "Minizip"
+    ],
+    "system_zlib" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BigEndianByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/BitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/ByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LittleEndianByteReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/LsbBitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/MsbBitWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/BitByteData/Sources/SignedNumberRepresentation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/GzipSwift/Sources/Gzip/Data+Gzip.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder+Equatable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zCoderInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFileInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zFolder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zPackInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zProperty.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zStreamInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/7zSubstreamInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/CompressionMethod+7z.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/7-Zip/MsbBitReader+7z.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+BlockSize.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2+Lengths.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BZip2Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/BurrowsWheeler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/BZip2/SuffixArray.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Archive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CheckSums.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/Code.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/CodeLength.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/DecodingTree.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CodingTree/EncodingTree.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionAlgorithm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/CompressionMethod.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Container.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/ContainerEntryType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/DosAttributes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Container/Permissions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DataError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DecompressionAlgorithm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/DeltaFilter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Common/FileSystemType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Constants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate+Lengths.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/Deflate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Deflate/DeflateError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/FileSystemType+Gzip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader+ExtraField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/GZip/GzipHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4+Compress.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/LZ4.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZ4/XxHash32.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMABitTreeDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAConstants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMADecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMALenDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMAProperties.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA/LZMARangeDecoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Decoder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/LZMA2/LZMA2Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/ContainerEntryType+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/Data+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/LittleEndianByteReader+Tar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarCreateError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarExtendedHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/TAR/TarWriter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/ByteReader+XZ.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/Sha256.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZBlock.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/XZ/XZStreamHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/BuiltinExtraFields.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/CompressionMethod+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/FileSystemType+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/LittleEndianByteReader+Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipCentralDirectoryEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEndOfCentralDirectory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipEntryInfoHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipExtraField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/ZIP/ZipLocalHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibArchive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/SWCompression/Sources/Zlib/ZlibHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Archive.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Entry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Unrar/Error.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/QuickZip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/ZipUtilities.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt-entitlement.plist"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/ZipIt/ZipItApp.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/sources"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BigEndianByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/ByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LittleEndianByteReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/LsbBitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/MsbBitWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/SignedNumberRepresentation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/archive.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/arcread.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/blake2s.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/cmddata.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/consio.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/crc.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/crypt.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/dll.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/encname.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/errhnd.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/extinfo.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/extract.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filcreat.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/file.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filefn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/filestr.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/find.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/getbits.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/global.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/hash.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/headers.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/largepage.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/list.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/match.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/options.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/pathfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/qopen.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rar.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rarvm.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rawread.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rdwrfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/resource.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rijndael.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/rs16.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/scantree.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/secpassword.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/sha1.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/sha256.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/smallfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/strfn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/strlist.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/system.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/threadpool.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/timefn.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/ui.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/unicode.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/unpack.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Cunrar.build/volume.cpp.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Gzip.build/Data+Gzip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/ioapi.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/unzip.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Minizip.build/zip.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder+Equatable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zCoderInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFileInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zFolder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zPackInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zProperty.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zStreamInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/7zSubstreamInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Archive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+BlockSize.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2+Lengths.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BZip2Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BuiltinExtraFields.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/BurrowsWheeler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ByteReader+XZ.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CheckSums.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Code.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CodeLength.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionAlgorithm.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+7z.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/CompressionMethod.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Container.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ContainerEntryType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Data+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DataError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecodingTree.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DecompressionAlgorithm.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Constants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate+Lengths.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Deflate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeflateError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DeltaFilter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/DosAttributes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/EncodingTree.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Gzip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/FileSystemType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader+ExtraField.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/GzipHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4+Compress.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZ4.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Decoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMA2Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMABitTreeDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAConstants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMADecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMALenDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMAProperties.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LZMARangeDecoder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Tar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/LittleEndianByteReader+Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/MsbBitReader+7z.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Permissions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/Sha256.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/SuffixArray.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarCreateError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarExtendedHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/TarWriter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZBlock.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XZStreamHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/XxHash32.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipCentralDirectoryEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEndOfCentralDirectory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipEntryInfoHelper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipExtraField.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZipLocalHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibArchive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/ZlibHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Archive.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Entry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/system_zlib.build/anchor.c.o"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.product/Objects.LinkFileList"
+    },
+    "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+module Unrar {
+    header "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/Unrar-Swift.h"
+    requires objc
+}

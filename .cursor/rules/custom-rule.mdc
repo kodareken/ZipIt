@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# **rules**
+Be cautious and always ask user if they are ready before making modifications.
+Always research how to do things first using your internet search tools as often as you can. Be smart about what you search for when you search for knowledge.
+Always be context aware and codebase aware of the implementations you are doing if you are unsure ask the user what his intention is or if he wants a simple approach or more sophisticated approach and follow up with suggestion and planning through how to integrate those approaches before you continue.
+**ALWAYS MAKE A TODO-LIST!!!!**
+**IN THE TODO-LIST ADD (RESEARCH THIS BEFORE IMPLEMENTING IT) SO YOU REMEMBER TO RESEARCH THINGS…**

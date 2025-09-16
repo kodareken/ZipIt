@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B4BFAA2E79E66500919140 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 84B4BFA92E79E66500919140 /* Zip */; };
+		84B4BFAD2E79E68300919140 /* SWCompression in Frameworks */ = {isa = PBXBuildFile; productRef = 84B4BFAC2E79E68300919140 /* SWCompression */; };
+		84B4BFB02E79E6AC00919140 /* Unrar in Frameworks */ = {isa = PBXBuildFile; productRef = 84B4BFAF2E79E6AC00919140 /* Unrar */; };
+		84B4BFB32E79E6CB00919140 /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = 84B4BFB22E79E6CB00919140 /* Gzip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84006E7F2E79D3D1007BAF8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84006E682E79D3D1007BAF8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84006E6F2E79D3D1007BAF8E;
+			remoteInfo = ZipIt;
+		};
+		84006E892E79D3D1007BAF8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84006E682E79D3D1007BAF8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84006E6F2E79D3D1007BAF8E;
+			remoteInfo = ZipIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84006E702E79D3D1007BAF8E /* ZipIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84006E7E2E79D3D1007BAF8E /* ZipItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84006E882E79D3D1007BAF8E /* ZipItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		84006E722E79D3D1007BAF8E /* ZipIt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZipIt;
+			sourceTree = "<group>";
+		};
+		84006E812E79D3D1007BAF8E /* ZipItTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZipItTests;
+			sourceTree = "<group>";
+		};
+		84006E8B2E79D3D1007BAF8E /* ZipItUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZipItUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84006E6D2E79D3D1007BAF8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4BFB02E79E6AC00919140 /* Unrar in Frameworks */,
+				84B4BFAA2E79E66500919140 /* Zip in Frameworks */,
+				84B4BFB32E79E6CB00919140 /* Gzip in Frameworks */,
+				84B4BFAD2E79E68300919140 /* SWCompression in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E7B2E79D3D1007BAF8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E852E79D3D1007BAF8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84006E672E79D3D1007BAF8E = {
+			isa = PBXGroup;
+			children = (
+				84006E722E79D3D1007BAF8E /* ZipIt */,
+				84006E812E79D3D1007BAF8E /* ZipItTests */,
+				84006E8B2E79D3D1007BAF8E /* ZipItUITests */,
+				84006E712E79D3D1007BAF8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84006E712E79D3D1007BAF8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84006E702E79D3D1007BAF8E /* ZipIt.app */,
+				84006E7E2E79D3D1007BAF8E /* ZipItTests.xctest */,
+				84006E882E79D3D1007BAF8E /* ZipItUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84006E6F2E79D3D1007BAF8E /* ZipIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84006E922E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipIt" */;
+			buildPhases = (
+				84006E6C2E79D3D1007BAF8E /* Sources */,
+				84006E6D2E79D3D1007BAF8E /* Frameworks */,
+				84006E6E2E79D3D1007BAF8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				84006E722E79D3D1007BAF8E /* ZipIt */,
+			);
+			name = ZipIt;
+			packageProductDependencies = (
+				84B4BFA92E79E66500919140 /* Zip */,
+				84B4BFAC2E79E68300919140 /* SWCompression */,
+				84B4BFAF2E79E6AC00919140 /* Unrar */,
+				84B4BFB22E79E6CB00919140 /* Gzip */,
+			);
+			productName = ZipIt;
+			productReference = 84006E702E79D3D1007BAF8E /* ZipIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84006E7D2E79D3D1007BAF8E /* ZipItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84006E952E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipItTests" */;
+			buildPhases = (
+				84006E7A2E79D3D1007BAF8E /* Sources */,
+				84006E7B2E79D3D1007BAF8E /* Frameworks */,
+				84006E7C2E79D3D1007BAF8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84006E802E79D3D1007BAF8E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				84006E812E79D3D1007BAF8E /* ZipItTests */,
+			);
+			name = ZipItTests;
+			packageProductDependencies = (
+			);
+			productName = ZipItTests;
+			productReference = 84006E7E2E79D3D1007BAF8E /* ZipItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84006E872E79D3D1007BAF8E /* ZipItUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84006E982E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipItUITests" */;
+			buildPhases = (
+				84006E842E79D3D1007BAF8E /* Sources */,
+				84006E852E79D3D1007BAF8E /* Frameworks */,
+				84006E862E79D3D1007BAF8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84006E8A2E79D3D1007BAF8E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				84006E8B2E79D3D1007BAF8E /* ZipItUITests */,
+			);
+			name = ZipItUITests;
+			packageProductDependencies = (
+			);
+			productName = ZipItUITests;
+			productReference = 84006E882E79D3D1007BAF8E /* ZipItUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84006E682E79D3D1007BAF8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					84006E6F2E79D3D1007BAF8E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					84006E7D2E79D3D1007BAF8E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 84006E6F2E79D3D1007BAF8E;
+					};
+					84006E872E79D3D1007BAF8E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 84006E6F2E79D3D1007BAF8E;
+					};
+				};
+			};
+			buildConfigurationList = 84006E6B2E79D3D1007BAF8E /* Build configuration list for PBXProject "ZipIt" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84006E672E79D3D1007BAF8E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				84B4BFA82E79E66500919140 /* XCRemoteSwiftPackageReference "Zip" */,
+				84B4BFAB2E79E68300919140 /* XCRemoteSwiftPackageReference "SWCompression" */,
+				84B4BFAE2E79E6AC00919140 /* XCRemoteSwiftPackageReference "Unrar.swift" */,
+				84B4BFB12E79E6CB00919140 /* XCRemoteSwiftPackageReference "GzipSwift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 84006E712E79D3D1007BAF8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84006E6F2E79D3D1007BAF8E /* ZipIt */,
+				84006E7D2E79D3D1007BAF8E /* ZipItTests */,
+				84006E872E79D3D1007BAF8E /* ZipItUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84006E6E2E79D3D1007BAF8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E7C2E79D3D1007BAF8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E862E79D3D1007BAF8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84006E6C2E79D3D1007BAF8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E7A2E79D3D1007BAF8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84006E842E79D3D1007BAF8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84006E802E79D3D1007BAF8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84006E6F2E79D3D1007BAF8E /* ZipIt */;
+			targetProxy = 84006E7F2E79D3D1007BAF8E /* PBXContainerItemProxy */;
+		};
+		84006E8A2E79D3D1007BAF8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84006E6F2E79D3D1007BAF8E /* ZipIt */;
+			targetProxy = 84006E892E79D3D1007BAF8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84006E902E79D3D1007BAF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = ZipIt/Info.plist;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84006E912E79D3D1007BAF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = ZipIt/Info.plist;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		84006E932E79D3D1007BAF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZipIt/ZipIt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84006E942E79D3D1007BAF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZipIt/ZipIt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		84006E962E79D3D1007BAF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipIt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZipIt";
+			};
+			name = Debug;
+		};
+		84006E972E79D3D1007BAF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipIt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZipIt";
+			};
+			name = Release;
+		};
+		84006E992E79D3D1007BAF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZipIt;
+			};
+			name = Debug;
+		};
+		84006E9A2E79D3D1007BAF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8V4AKXRS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasek.ZipItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZipIt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84006E6B2E79D3D1007BAF8E /* Build configuration list for PBXProject "ZipIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84006E902E79D3D1007BAF8E /* Debug */,
+				84006E912E79D3D1007BAF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84006E922E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84006E932E79D3D1007BAF8E /* Debug */,
+				84006E942E79D3D1007BAF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84006E952E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84006E962E79D3D1007BAF8E /* Debug */,
+				84006E972E79D3D1007BAF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84006E982E79D3D1007BAF8E /* Build configuration list for PBXNativeTarget "ZipItUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84006E992E79D3D1007BAF8E /* Debug */,
+				84006E9A2E79D3D1007BAF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84B4BFA82E79E66500919140 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		84B4BFAB2E79E68300919140 /* XCRemoteSwiftPackageReference "SWCompression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tsolomko/SWCompression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.6;
+			};
+		};
+		84B4BFAE2E79E6AC00919140 /* XCRemoteSwiftPackageReference "Unrar.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mtgto/Unrar.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+		84B4BFB12E79E6CB00919140 /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84B4BFA92E79E66500919140 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B4BFA82E79E66500919140 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		84B4BFAC2E79E68300919140 /* SWCompression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B4BFAB2E79E68300919140 /* XCRemoteSwiftPackageReference "SWCompression" */;
+			productName = SWCompression;
+		};
+		84B4BFAF2E79E6AC00919140 /* Unrar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B4BFAE2E79E6AC00919140 /* XCRemoteSwiftPackageReference "Unrar.swift" */;
+			productName = Unrar;
+		};
+		84B4BFB22E79E6CB00919140 /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B4BFB12E79E6CB00919140 /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 84006E682E79D3D1007BAF8E /* Project object */;
+}

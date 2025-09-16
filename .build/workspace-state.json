@@ -1,0 +1,98 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "bitbytedata",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/tsolomko/BitByteData",
+          "name" : "BitByteData"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "cdcdc5177ad536cfb11b95c620f926a81014b7fe",
+            "version" : "2.0.4"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "BitByteData"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "gzipswift",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/1024jp/GzipSwift.git",
+          "name" : "Gzip"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "7a7f17761c76a932662ab77028a4329f67d645a4",
+            "version" : "5.2.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "GzipSwift"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swcompression",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/tsolomko/SWCompression.git",
+          "name" : "SWCompression"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "390e0b0af8dd19a600005a242a89e570ff482e09",
+            "version" : "4.8.6"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "SWCompression"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "unrar.swift",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/mtgto/Unrar.swift.git",
+          "name" : "Unrar"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "b27f008ea520539c780024d090686c9cd3ae3bbc",
+            "version" : "0.5.1"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "Unrar.swift"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "zip",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/marmelroy/Zip.git",
+          "name" : "Zip"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "67fa55813b9e7b3b9acee9c0ae501def28746d76",
+            "version" : "2.1.2"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "Zip"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

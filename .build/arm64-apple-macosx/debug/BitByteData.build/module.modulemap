@@ -1,0 +1,4 @@
+module BitByteData {
+    header "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/BitByteData-Swift.h"
+    requires objc
+}

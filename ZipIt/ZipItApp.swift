@@ -4,11 +4,16 @@
 //
 //  Created by Douglas Ek on 2025-09-16.
 //
+//  This is the main entry point of the ZipIt application. It sets up the main window
+//  and handles app-level events, such as opening files from Finder.
+//
 
 import SwiftUI
 
 @main
 struct ZipItApp: App {
+    /// The shared state of the application, including the URL of the selected archive.
+    /// This is used to pass the file URL from the app's entry point to the main ContentView.
     @StateObject private var appState = AppState()
     
     var body: some Scene {
@@ -17,35 +22,43 @@ struct ZipItApp: App {
                 .environmentObject(appState)
                 .onOpenURL(perform: handleOpenURL)
         }
+        // This allows the app to handle file openings even when it's already running.
         .handlesExternalEvents(matching: Set(arrayLiteral: "*"))
     }
     
+    /// Handles the event when a file is opened with the app (e.g., by double-clicking).
+    /// - Parameter url: The URL of the file that was opened.
     private func handleOpenURL(_ url: URL) {
         print("🔗 App opened with URL: \(url.path)")
         
-        // Check if this is a quick extract request (from Cmd+Down or double-click)
+        // Check if the app should perform a "quick extract" without showing the main UI.
         if shouldQuickExtract() {
             performQuickExtract(url: url)
         } else {
-            // Load into UI for user interaction
+            // If not a quick extract, load the file into the UI for user interaction.
             appState.selectedArchiveURL = url
         }
     }
     
+    /// Determines whether a "quick extract" should be performed.
+    /// A quick extract is triggered by command-line arguments or specific user actions.
+    /// - Returns: `true` if a quick extract should be performed, `false` otherwise.
     private func shouldQuickExtract() -> Bool {
-        // Check for command line arguments or environment variables
         let arguments = CommandLine.arguments
         
-        // Quick extract if launched with --quick-extract or if it's the default app opening
-        return arguments.contains("--quick-extract") || 
+        // Perform quick extract if launched with specific command-line flags.
+        // The check for `NSApp.currentEvent` is a less reliable method and will be improved.
+        return arguments.contains("--quick-extract") ||
                arguments.contains("-q") ||
-               NSApp.currentEvent?.type == .keyDown // Detect Cmd+Down press
+               NSApp.currentEvent?.type == .keyDown // Detects Cmd+Down, but can be unreliable.
     }
     
+    /// Performs the extraction in the background without showing the main UI.
+    /// - Parameter url: The URL of the archive file to extract.
     private func performQuickExtract(url: URL) {
         Task {
             do {
-                // Extract to the same directory as the archive
+                // By default, extract to the same directory where the archive is located.
                 let destinationURL = url.deletingLastPathComponent()
                 let format = ArchiveFormat.detect(from: url)
                 
@@ -56,14 +69,14 @@ struct ZipItApp: App {
                 
                 print("✅ Quick extraction completed!")
                 
-                // Exit the app after successful extraction
+                // Terminate the app after a short delay to ensure all operations are finished.
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     NSApp.terminate(nil)
                 }
                 
             } catch {
                 print("❌ Quick extraction failed: \(error)")
-                // Fall back to UI mode on error
+                // If quick extraction fails, fall back to the main UI and show the error.
                 await MainActor.run {
                     appState.selectedArchiveURL = url
                 }
@@ -72,7 +85,9 @@ struct ZipItApp: App {
     }
 }
 
-// AppState to manage file passing between app launch and UI
+/// A simple observable object to manage the application's state.
+/// This class holds the URL of the archive file that needs to be processed.
 class AppState: ObservableObject {
+    /// The URL of the archive file selected by the user, either through the file picker or by opening a file with the app.
     @Published var selectedArchiveURL: URL?
 }

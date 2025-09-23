@@ -4,11 +4,18 @@
 //
 //  Created by Douglas Ek on 2025-09-16.
 //
+//  This file defines the main user interface of the ZipIt application using SwiftUI.
+//  It allows users to select an archive file, choose a destination folder, and
+//  initiate the extraction process.
+//
 
 import SwiftUI
 import UniformTypeIdentifiers
 
+/// A reusable view component for selecting an archive file.
+/// This button opens the system's file picker and updates the selected URL.
 struct ArchiveFilePicker: View {
+    /// A binding to the URL of the selected archive file.
     @Binding var selectedURL: URL?
     
     var body: some View {
@@ -22,6 +29,7 @@ struct ArchiveFilePicker: View {
         .buttonStyle(.bordered)
     }
     
+    /// Opens the `NSOpenPanel` to allow the user to select an archive file.
     private func selectFile() {
         print("Opening file selection panel")
         let panel = NSOpenPanel()
@@ -46,30 +54,62 @@ struct ArchiveFilePicker: View {
     }
 }
 
+/// The main view of the application, containing all the UI elements for file extraction.
 struct ContentView: View {
+    /// The `ArchiveExtractor` instance responsible for the extraction logic.
     @StateObject private var extractor = ArchiveExtractor()
+    /// The shared application state, used to receive the URL of a file opened with the app.
     @EnvironmentObject var appState: AppState
+
+    /// Represents the state of the extraction process.
+    enum ExtractionState: Identifiable {
+        case idle
+        case loading
+        case success(String)
+        case failure(String)
+
+        var id: String {
+            switch self {
+            case .idle: return "idle"
+            case .loading: return "loading"
+            case .success(let message): return "success-\(message)"
+            case .failure(let message): return "failure-\(message)"
+            }
+        }
+
+        struct AlertItem: Identifiable {
+            var id = UUID()
+            var title: String
+            var message: String
+        }
+
+        var alertItem: AlertItem? {
+            switch self {
+            case .success(let message):
+                return AlertItem(title: "Success", message: message)
+            case .failure(let message):
+                return AlertItem(title: "Error", message: message)
+            default:
+                return nil
+            }
+        }
+    }
+
+    // MARK: - State Properties
+
+    /// The URL of the archive file to be extracted.
     @State private var selectedArchiveURL: URL?
+    /// The URL of the destination folder for the extracted files.
     @State private var selectedDestinationURL: URL?
+    /// The current state of the extraction process.
+    @State private var extractionState: ExtractionState = .idle
+    /// A boolean to control the presentation of the destination folder picker.
     @State private var showDestinationPicker = false
-    @State private var showAlert = false
-    @State private var alertMessage = ""
-    @State private var extractionCompleted = false
     
+    /// A list of supported archive file extensions.
     let supportedFormats = ["zip", "tar", "gz", "7z", "rar"]
     
-    // Create explicit UTType instances
-    private var archiveTypes: [UTType] {
-        [
-            .zip,
-            UTType(filenameExtension: "tar")!,
-            UTType(filenameExtension: "gz")!,
-            UTType(filenameExtension: "tgz")!,
-            UTType(filenameExtension: "7z")!,
-            UTType(filenameExtension: "rar")!
-        ]
-    }
-    
+    /// The main layout of the content view.
     var body: some View {
         VStack(spacing: 20) {
             headerSection
@@ -82,32 +122,36 @@ struct ContentView: View {
         }
         .padding()
         .frame(minWidth: 400, minHeight: 300)
+        // File importer for selecting the destination folder.
         .fileImporter(
             isPresented: $showDestinationPicker,
             allowedContentTypes: [.folder],
             allowsMultipleSelection: false,
             onCompletion: handleDestinationSelection
         )
-        .alert("Extraction Status", isPresented: $showAlert) {
-            Button("OK", role: .cancel) { }
-        } message: {
-            Text(alertMessage)
+        // Alert for showing extraction status and errors.
+        .alert(item: $extractionState.alertItem) { alertItem in
+            Alert(title: Text(alertItem.title), message: Text(alertItem.message), dismissButton: .default(Text("OK")))
         }
         .onAppear {
             print("ContentView appeared")
         }
+        // This receiver handles files that are opened with the app.
         .onReceive(appState.$selectedArchiveURL) { url in
             if let url = url {
                 print("📁 Auto-loading file: \(url.lastPathComponent)")
                 selectedArchiveURL = url
-                extractionCompleted = false
+                extractionState = .idle
                 
-                // Auto-select Downloads folder as destination if available
+                // Automatically select a default destination when a file is opened.
                 autoSelectDestination()
             }
         }
     }
     
+    // MARK: - UI Sections
+
+    /// The header section of the view, displaying the app icon and title.
     private var headerSection: some View {
         VStack {
             if let nsImage = NSImage(named: "AppIcon") {
@@ -116,7 +160,7 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 64, height: 64)
             } else {
-                // Fallback to system icon if AppIcon not found
+                // Fallback icon if the AppIcon is not found.
                 Image(systemName: "archivebox")
                     .font(.system(size: 48))
                     .foregroundColor(.accentColor)
@@ -129,13 +173,14 @@ struct ContentView: View {
         }
     }
     
+    /// The section for selecting the archive file.
     private var archiveSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Archive File")
                 .font(.headline)
             
             ArchiveFilePicker(selectedURL: $selectedArchiveURL)
-            .accessibilityLabel("Select archive file")
+                .accessibilityLabel("Select archive file")
             
             Text("Supported formats: \(supportedFormats.joined(separator: ", "))")
                 .font(.caption)
@@ -143,6 +188,7 @@ struct ContentView: View {
         }
     }
     
+    /// The section for selecting the destination folder.
     private var destinationSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Destination Folder")
@@ -163,9 +209,10 @@ struct ContentView: View {
         }
     }
     
+    /// The button that initiates the file extraction.
     private var extractionButton: some View {
         Button(action: extractArchive) {
-            if extractor.isExtracting {
+            if case .loading = extractionState {
                 ProgressView()
                     .frame(maxWidth: .infinity)
             } else {
@@ -177,80 +224,76 @@ struct ContentView: View {
         .disabled(selectedArchiveURL == nil || selectedDestinationURL == nil || extractor.isExtracting)
     }
     
+    /// The section that displays the progress of the extraction.
     private var progressSection: some View {
         VStack(spacing: 12) {
-            if extractor.isExtracting {
+            if case .loading = extractionState {
                 ProgressView(value: extractor.progress)
                     .progressViewStyle(LinearProgressViewStyle())
                 Text("Extracting...")
                     .font(.caption)
             }
             
-            if extractionCompleted {
-                Label("Extraction completed successfully!", systemImage: "checkmark.circle")
+            if case .success(let message) = extractionState {
+                Label(message, systemImage: "checkmark.circle")
                     .foregroundColor(.green)
             }
             
-            if let error = extractor.extractionError {
-                Label(error, systemImage: "exclamationmark.triangle")
+            if case .failure(let message) = extractionState {
+                Label(message, systemImage: "exclamationmark.triangle")
                     .foregroundColor(.red)
             }
         }
     }
     
+    // MARK: - Helper Functions
+
+    /// Handles the result of the destination folder selection.
     private func handleDestinationSelection(result: Result<[URL], Error>) {
         print("Folder importer completed with result")
         switch result {
         case .success(let urls):
             if let url = urls.first {
                 selectedDestinationURL = url
-                extractionCompleted = false
+                extractionState = .idle
                 print("Selected destination: \(url.path)")
             }
         case .failure(let error):
-            alertMessage = "Failed to select destination: \(error.localizedDescription)"
-            showAlert = true
+            extractionState = .failure("Failed to select destination: \(error.localizedDescription)")
             print("Folder selection error: \(error.localizedDescription)")
         }
     }
     
+    /// Initiates the archive extraction process.
     private func extractArchive() {
         guard let archiveURL = selectedArchiveURL,
               let destinationURL = selectedDestinationURL else {
-            alertMessage = "Please select both archive file and destination folder"
-            showAlert = true
+            extractionState = .failure("Please select both an archive file and a destination folder.")
             return
         }
         
         let format = ArchiveFormat.detect(from: archiveURL)
+        extractionState = .loading
         
         Task {
-            do {
-                try await extractor.extractArchive(
-                    from: archiveURL,
-                    to: destinationURL,
-                    format: format
-                )
-                
-                await MainActor.run {
-                    extractionCompleted = true
-                    alertMessage = "Archive extracted successfully!"
-                    showAlert = true
-                }
-            } catch ExtractionError.unsupportedFormat {
-                await MainActor.run {
-                    alertMessage = "Unsupported archive format"
-                    showAlert = true
-                }
-            } catch {
-                await MainActor.run {
-                    alertMessage = "Extraction failed: \(error.localizedDescription)"
-                    showAlert = true
+            await extractor.extractArchive(
+                from: archiveURL,
+                to: destinationURL,
+                format: format
+            )
+
+            await MainActor.run {
+                if let error = extractor.extractionError {
+                    extractionState = .failure(error)
+                } else {
+                    extractionState = .success("Archive extracted successfully!")
                 }
             }
         }
     }
     
+    /// Automatically selects a default destination folder.
+    /// This function will be updated to use the Downloads folder.
     private func autoSelectDestination() {
         // Auto-select the same directory as the archive for convenience
         if let archiveURL = selectedArchiveURL {

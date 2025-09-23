@@ -2,7 +2,6 @@ import Foundation
 import Combine
 import Zip
 import SWCompression
-import Gzip
 import Unrar
 
 enum ArchiveFormat: String {
@@ -124,7 +123,16 @@ class ArchiveExtractor: ObservableObject {
             
             // Handle GZIP compression if needed
             if format == .gzip {
-                data = try data.gunzipped()
+                data = try GzipArchive.unarchive(archive: data)
+            }
+
+            // If it's a standalone .gz file, save the decompressed data directly.
+            if sourceURL.pathExtension == "gz" {
+                let fileName = sourceURL.deletingPathExtension().lastPathComponent
+                let fileURL = destinationURL.appendingPathComponent(fileName)
+                try data.write(to: fileURL)
+                await updateProgress(1.0)
+                return
             }
             
             // Extract TAR archive using SWCompression

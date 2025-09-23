@@ -18,9 +18,6 @@ let package = Package(
         // RAR and 7Z file handling through SWCompression
         .package(url: "https://github.com/tsolomko/SWCompression.git", from: "4.8.0"),
         
-        // GZIP file handling
-        .package(url: "https://github.com/1024jp/GzipSwift.git", from: "5.2.0"),
-        
         // RAR file handling
         .package(url: "https://github.com/mtgto/Unrar.swift.git", from: "0.3.15")
     ],
@@ -30,7 +27,6 @@ let package = Package(
             dependencies: [
                 "Zip",
                 "SWCompression",
-                .product(name: "Gzip", package: "GzipSwift"),
                 .product(name: "Unrar", package: "unrar.swift")
             ],
             path: "ZipIt",

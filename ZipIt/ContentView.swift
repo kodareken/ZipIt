@@ -23,7 +23,6 @@ struct ArchiveFilePicker: View {
     }
     
     private func selectFile() {
-        print("Opening file selection panel")
         let panel = NSOpenPanel()
         panel.allowedContentTypes = [
             .zip,
@@ -39,27 +38,70 @@ struct ArchiveFilePicker: View {
         
         if panel.runModal() == .OK {
             selectedURL = panel.url
-            print("Selected file: \(panel.url?.path ?? "none")")
-        } else {
-            print("File selection cancelled")
+        }
+    }
+}
+
+struct MultiFilePicker: View {
+    @Binding var selectedURLs: [URL]
+
+    var body: some View {
+        Button(action: selectFiles) {
+            HStack {
+                Image(systemName: "doc.badge.plus")
+                if selectedURLs.isEmpty {
+                    Text("Select Files or Folders to Compress")
+                } else {
+                    Text("\(selectedURLs.count) items selected")
+                }
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.bordered)
+    }
+
+    private func selectFiles() {
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = true
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = true
+
+        if panel.runModal() == .OK {
+            selectedURLs = panel.urls
         }
     }
 }
 
 struct ContentView: View {
+    enum Mode: String, CaseIterable, Identifiable {
+        case extract = "Extract"
+        case compress = "Compress"
+        var id: Self { self }
+    }
+
     @StateObject private var extractor = ArchiveExtractor()
+    @StateObject private var compressor = ArchiveCompressor()
     @EnvironmentObject var appState: AppState
+
+    @State private var currentMode: Mode = .extract
+
+    // Extraction state
     @State private var selectedArchiveURL: URL?
+    @State private var extractionCompleted = false
+
+    // Compression state
+    @State private var selectedFilesToCompress: [URL] = []
+    @State private var compressionCompleted = false
+
+    // Common state
     @State private var selectedDestinationURL: URL?
     @State private var showDestinationPicker = false
     @State private var showAlert = false
     @State private var alertMessage = ""
-    @State private var extractionCompleted = false
     
     let supportedFormats = ["zip", "tar", "gz", "7z", "rar"]
     
-    // Create explicit UTType instances
-    private var archiveTypes: [UTType] {
+    private var archiveTypes: [UType] {
         [
             .zip,
             UTType(filenameExtension: "tar")!,
@@ -73,22 +115,32 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
             headerSection
-            archiveSelectionSection
-            destinationSelectionSection
-            extractionButton
-            progressSection
+
+            Picker("Mode", selection: $currentMode) {
+                ForEach(Mode.allCases) { mode in
+                    Text(mode.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+
+            if currentMode == .extract {
+                extractionView
+            } else {
+                compressionView
+            }
             
             Spacer()
         }
         .padding()
-        .frame(minWidth: 400, minHeight: 300)
+        .frame(minWidth: 400, minHeight: 350)
         .fileImporter(
             isPresented: $showDestinationPicker,
             allowedContentTypes: [.folder],
             allowsMultipleSelection: false,
             onCompletion: handleDestinationSelection
         )
-        .alert("Extraction Status", isPresented: $showAlert) {
+        .alert("Status", isPresented: $showAlert) {
             Button("OK", role: .cancel) { }
         } message: {
             Text(alertMessage)
@@ -99,10 +151,9 @@ struct ContentView: View {
         .onReceive(appState.$selectedArchiveURL) { url in
             if let url = url {
                 print("📁 Auto-loading file: \(url.lastPathComponent)")
+                currentMode = .extract
                 selectedArchiveURL = url
                 extractionCompleted = false
-                
-                // Auto-select Downloads folder as destination if available
                 autoSelectDestination()
             }
         }
@@ -116,26 +167,43 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 64, height: 64)
             } else {
-                // Fallback to system icon if AppIcon not found
                 Image(systemName: "archivebox")
                     .font(.system(size: 48))
                     .foregroundColor(.accentColor)
             }
             Text("ZipIt")
                 .font(.largeTitle.bold())
-            Text("Simple Archive Extractor")
+            Text(currentMode == .extract ? "Simple Archive Extractor" : "Simple Archive Compressor")
                 .font(.headline)
                 .foregroundColor(.secondary)
         }
     }
     
+    private var extractionView: some View {
+        VStack(spacing: 20) {
+            archiveSelectionSection
+            destinationSelectionSection
+            extractionButton
+            progressSection
+        }
+    }
+
+    private var compressionView: some View {
+        VStack(spacing: 20) {
+            compressionSourceSection
+            destinationSelectionSection
+            compressionButton
+            progressSection
+        }
+    }
+
     private var archiveSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Archive File")
                 .font(.headline)
             
             ArchiveFilePicker(selectedURL: $selectedArchiveURL)
-            .accessibilityLabel("Select archive file")
+                .accessibilityLabel("Select archive file")
             
             Text("Supported formats: \(supportedFormats.joined(separator: ", "))")
                 .font(.caption)
@@ -143,14 +211,23 @@ struct ContentView: View {
         }
     }
     
+    private var compressionSourceSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Files to Compress")
+                .font(.headline)
+
+            MultiFilePicker(selectedURLs: $selectedFilesToCompress)
+                .accessibilityLabel("Select files and folders to compress")
+        }
+    }
+
     private var destinationSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Destination Folder")
                 .font(.headline)
             
-            Button(action: { 
-                print("Select Destination button tapped")
-                showDestinationPicker = true 
+            Button(action: {
+                showDestinationPicker = true
             }) {
                 HStack {
                     Image(systemName: "folder.badge.plus")
@@ -177,6 +254,20 @@ struct ContentView: View {
         .disabled(selectedArchiveURL == nil || selectedDestinationURL == nil || extractor.isExtracting)
     }
     
+    private var compressionButton: some View {
+        Button(action: compressFiles) {
+            if compressor.isCompressing {
+                ProgressView()
+                    .frame(maxWidth: .infinity)
+            } else {
+                Text("Compress Files")
+                    .frame(maxWidth: .infinity)
+            }
+        }
+        .buttonStyle(.borderedProminent)
+        .disabled(selectedFilesToCompress.isEmpty || selectedDestinationURL == nil || compressor.isCompressing)
+    }
+
     private var progressSection: some View {
         VStack(spacing: 12) {
             if extractor.isExtracting {
@@ -184,14 +275,25 @@ struct ContentView: View {
                     .progressViewStyle(LinearProgressViewStyle())
                 Text("Extracting...")
                     .font(.caption)
+            } else if compressor.isCompressing {
+                ProgressView(value: compressor.progress)
+                    .progressViewStyle(LinearProgressViewStyle())
+                Text("Compressing...")
+                    .font(.caption)
             }
             
             if extractionCompleted {
                 Label("Extraction completed successfully!", systemImage: "checkmark.circle")
                     .foregroundColor(.green)
+            } else if compressionCompleted {
+                Label("Compression completed successfully!", systemImage: "checkmark.circle")
+                    .foregroundColor(.green)
             }
             
             if let error = extractor.extractionError {
+                Label(error, systemImage: "exclamationmark.triangle")
+                    .foregroundColor(.red)
+            } else if let error = compressor.compressionError {
                 Label(error, systemImage: "exclamationmark.triangle")
                     .foregroundColor(.red)
             }
@@ -199,18 +301,16 @@ struct ContentView: View {
     }
     
     private func handleDestinationSelection(result: Result<[URL], Error>) {
-        print("Folder importer completed with result")
         switch result {
         case .success(let urls):
             if let url = urls.first {
                 selectedDestinationURL = url
                 extractionCompleted = false
-                print("Selected destination: \(url.path)")
+                compressionCompleted = false
             }
         case .failure(let error):
             alertMessage = "Failed to select destination: \(error.localizedDescription)"
             showAlert = true
-            print("Folder selection error: \(error.localizedDescription)")
         }
     }
     
@@ -237,11 +337,6 @@ struct ContentView: View {
                     alertMessage = "Archive extracted successfully!"
                     showAlert = true
                 }
-            } catch ExtractionError.unsupportedFormat {
-                await MainActor.run {
-                    alertMessage = "Unsupported archive format"
-                    showAlert = true
-                }
             } catch {
                 await MainActor.run {
                     alertMessage = "Extraction failed: \(error.localizedDescription)"
@@ -250,12 +345,40 @@ struct ContentView: View {
             }
         }
     }
+
+    private func compressFiles() {
+        guard !selectedFilesToCompress.isEmpty,
+              let destinationURL = selectedDestinationURL else {
+            alertMessage = "Please select files to compress and a destination folder"
+            showAlert = true
+            return
+        }
+
+        Task {
+            do {
+                try await compressor.compressFiles(
+                    from: selectedFilesToCompress,
+                    to: destinationURL,
+                    fileName: "Archive"
+                )
+
+                await MainActor.run {
+                    compressionCompleted = true
+                    alertMessage = "Files compressed successfully!"
+                    showAlert = true
+                }
+            } catch {
+                await MainActor.run {
+                    alertMessage = "Compression failed: \(error.localizedDescription)"
+                    showAlert = true
+                }
+            }
+        }
+    }
     
     private func autoSelectDestination() {
-        // Auto-select the same directory as the archive for convenience
         if let archiveURL = selectedArchiveURL {
             selectedDestinationURL = archiveURL.deletingLastPathComponent()
-            print("📂 Auto-selected destination: \(selectedDestinationURL?.path ?? "none")")
         }
     }
 }

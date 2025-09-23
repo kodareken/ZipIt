@@ -43,12 +43,15 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 - **Auto-destination** - Extracts to the same folder as the archive
 - **Progress Tracking** - Real-time extraction progress
 
+### File Compression
+- **NEW! Zip Compression** - Select multiple files and folders and compress them into a single .zip archive.
+
 ### User Experience
 - **Modern UI** - Beautiful SwiftUI interface
 - **Drag & Drop** - Simple file selection
 - **Error Handling** - Clear messages for password-protected or corrupted archives
 - **Lightweight** - Minimal system resources
-- **Fast** - Async extraction with progress feedback
+- **Fast** - Async extraction and compression with progress feedback
 
 ## 📥 Installation
 
@@ -79,6 +82,12 @@ open ZipIt.xcodeproj
 2. **"Get Info"** → "Open with" → Choose **ZipIt**
 3. **"Change All..."** to set ZipIt as default for all RAR files
 4. **Double-click** any RAR file → Opens directly in ZipIt
+
+### How to Compress Files
+1. **Launch ZipIt** and switch to **"Compress"** mode.
+2. **Select Files/Folders** - Click to select one or more items to be included in the archive.
+3. **Choose Destination** - Pick where to save your new .zip file.
+4. **Compress** - Hit the compress button. Your archive will be created in the destination folder.
 
 ### Power User: Quick Extract
 1. **Select** any archive file in Finder
@@ -121,7 +130,7 @@ We welcome contributions! This app was built quickly with AI assistance, proving
 - 🗜️ **New Formats** - Support for CAB, ISO, DMG, etc.
 - ⚡ **Performance** - Faster extraction algorithms
 - 🌐 **Localization** - Multi-language support
-- 🔧 **Features** - Batch processing, compression support
+- 🔧 **Features** - Batch processing, support for more compression formats (7z, Gzip, etc.)
 
 ## 📝 License
 

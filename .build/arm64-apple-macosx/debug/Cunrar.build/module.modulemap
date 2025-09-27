@@ -1,4 +1,4 @@
 module Cunrar {
-    umbrella "/Users/admin/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include"
+    umbrella "/Users/admin/Code/4.github_repos/ZipIt/.build/checkouts/Unrar.swift/Sources/Cunrar/include"
     export *
 }

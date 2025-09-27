@@ -1,4 +1,4 @@
 module Minizip {
-    umbrella header "/Users/admin/ZipIt/.build/checkouts/Zip/Zip/minizip/include/Minizip.h"
+    umbrella header "/Users/admin/Code/4.github_repos/ZipIt/.build/checkouts/Zip/Zip/minizip/include/Minizip.h"
     export *
 }

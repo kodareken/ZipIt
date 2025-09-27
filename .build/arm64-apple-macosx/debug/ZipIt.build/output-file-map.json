@@ -1,23 +1,54 @@
 {
   "": {
-    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/master.swiftdeps"
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/master.swiftdeps"
   },
-  "/Users/admin/ZipIt/ZipIt/ArchiveExtractor.swift": {
-    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.d",
-    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o",
-    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor~partial.swiftmodule",
-    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swiftdeps"
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ArchiveExtractor.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.dia"
   },
-  "/Users/admin/ZipIt/ZipIt/ContentView.swift": {
-    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.d",
-    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o",
-    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView~partial.swiftmodule",
-    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swiftdeps"
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ContentView.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.dia"
   },
-  "/Users/admin/ZipIt/ZipIt/ZipItApp.swift": {
-    "dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.d",
-    "object": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o",
-    "swiftmodule": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp~partial.swiftmodule",
-    "swift-dependencies": "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swiftdeps"
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/Data+Utilities.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.dia"
+  },
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARArchiver.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.dia"
+  },
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARCompression.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.dia"
+  },
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARTester.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.dia"
+  },
+  "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ZipItApp.swift": {
+    "dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.d",
+    "object": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o",
+    "swiftmodule": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swiftdeps",
+    "diagnostics": "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.dia"
   }
 }

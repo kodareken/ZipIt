@@ -3,7 +3,7 @@ import Foundation
 extension Foundation.Bundle {
     static let module: Bundle = {
         let mainPath = Bundle.main.bundleURL.appendingPathComponent("BitByteData_BitByteData.bundle").path
-        let buildPath = "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/BitByteData_BitByteData.bundle"
+        let buildPath = "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/BitByteData_BitByteData.bundle"
 
         let preferredBundle = Bundle(path: mainPath)
 

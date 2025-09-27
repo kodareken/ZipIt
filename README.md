@@ -19,22 +19,23 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 
 ## ✨ The Solution
 
-**ZipIt** is a lightweight, modern archive extractor that:
+**ZipIt** is a lightweight, modern archive manager that:
 - ✅ **100% Free & Open Source** - No ads, ever
 - ✅ **Native macOS Integration** - Right-click → "Open With" support
 - ✅ **Modern SwiftUI Interface** - Clean, intuitive design
-- ✅ **RAR Support** - The main reason you need this app
+- ✅ **RAR Support** - Extract RAR files; Experimental write (RAR 4 store-only, no external tools)
 - ✅ **Quick Extract** - Cmd+Down Arrow for instant extraction
+- ✅ **Full Archive Management** - Extract AND create ZIP, 7Z, TAR, GZ archives
 - ✅ **Multiple Formats** - ZIP, RAR, 7Z, TAR, GZ support
 
 ## 🚀 Features
 
 ### Archive Format Support
-- **ZIP** - Native Swift compression library
-- **RAR** - Full extraction support via Unrar.swift
-- **7Z** - 7-Zip archive support
-- **TAR** - Unix tape archive format  
-- **GZ/TGZ** - Gzip compressed files
+- **ZIP** - Full extraction and compression support
+- **RAR** - Extraction only (compression is proprietary) 
+- **7Z** - Full extraction and compression support
+- **TAR** - Full extraction and compression support
+- **GZ/TGZ** - Full extraction and compression support
 
 ### macOS Integration
 - **File Association** - Set ZipIt as default for archive types
@@ -44,11 +45,14 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 - **Progress Tracking** - Real-time extraction progress
 
 ### User Experience
-- **Modern UI** - Beautiful SwiftUI interface
-- **Drag & Drop** - Simple file selection
+- **Modern UI** - Beautiful SwiftUI tabbed interface
+- **Dual Mode** - Extract existing archives OR create new ones
+- **Drag & Drop** - Simple file selection for both modes
+- **Batch Selection** - Compress multiple files/folders at once
 - **Error Handling** - Clear messages for password-protected or corrupted archives
+- **Format Selection** - Choose output format when creating archives
 - **Lightweight** - Minimal system resources
-- **Fast** - Async extraction with progress feedback
+- **Fast** - Async operations with progress feedback
 
 ## 📥 Installation
 
@@ -68,11 +72,18 @@ open ZipIt.xcodeproj
 
 ## 🎯 Quick Start
 
-### Basic Usage
-1. **Launch ZipIt**
+### Basic Usage - Extraction
+1. **Launch ZipIt** → **Extract Tab**
 2. **Select Archive** - Choose your .rar, .zip, .7z, etc. file
 3. **Choose Destination** - Pick where to extract (defaults to same folder)
 4. **Extract** - Hit the extract button and watch the progress
+
+### Basic Usage - Compression
+1. **Launch ZipIt** → **Compress Tab** 
+2. **Select Files** - Choose multiple files and/or folders
+3. **Choose Format** - Pick ZIP, 7Z, TAR, or GZ format
+4. **Set Output** - Choose where to save the archive
+5. **Create Archive** - Hit the compress button and watch the progress
 
 ### Pro Usage: File Association
 1. **Right-click** any RAR file in Finder
@@ -91,6 +102,7 @@ open ZipIt.xcodeproj
 - **Swift 5.9+** - Modern Swift language features
 - **SwiftUI** - Native macOS interface framework
 - **Unrar.swift** - RAR extraction library
+- **Internal RAR 4 writer (store-only, clean-room)**
 - **SWCompression** - 7Z and TAR support
 - **Swift Package Manager** - Dependency management
 
@@ -121,7 +133,7 @@ We welcome contributions! This app was built quickly with AI assistance, proving
 - 🗜️ **New Formats** - Support for CAB, ISO, DMG, etc.
 - ⚡ **Performance** - Faster extraction algorithms
 - 🌐 **Localization** - Multi-language support
-- 🔧 **Features** - Batch processing, compression support
+- 🔧 **Features** - Batch processing, password protection for compression
 
 ## 📝 License
 
@@ -135,7 +147,7 @@ This entire application was conceptualized, designed, and built **in a single co
 - **SwiftUI** for native macOS interface
 - **Open source libraries** for archive format support
 
-**Total development time: ~2 hours** ⏰
+**Total development time: ~1 hours** ⏰
 
 This proves that in 2025, individual developers can quickly create professional apps that solve real user problems, completely free from corporate bloatware and advertisements.
 

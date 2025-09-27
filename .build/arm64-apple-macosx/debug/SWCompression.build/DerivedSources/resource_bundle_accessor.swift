@@ -3,7 +3,7 @@ import Foundation
 extension Foundation.Bundle {
     static let module: Bundle = {
         let mainPath = Bundle.main.bundleURL.appendingPathComponent("SWCompression_SWCompression.bundle").path
-        let buildPath = "/Users/admin/ZipIt/.build/arm64-apple-macosx/debug/SWCompression_SWCompression.bundle"
+        let buildPath = "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/SWCompression_SWCompression.bundle"
 
         let preferredBundle = Bundle(path: mainPath)
 

@@ -11,6 +11,7 @@
 import SwiftUI
 
 @main
+@available(macOS 13.0, *)
 struct ZipItApp: App {
     /// The shared state of the application, including the URL of the selected archive.
     /// This is used to pass the file URL from the app's entry point to the main ContentView.
@@ -21,8 +22,9 @@ struct ZipItApp: App {
             ContentView()
                 .environmentObject(appState)
                 .onOpenURL(perform: handleOpenURL)
+                .frame(minWidth: 500, minHeight: 400)
         }
-        // This allows the app to handle file openings even when it's already running.
+        .windowResizability(.contentSize)
         .handlesExternalEvents(matching: Set(arrayLiteral: "*"))
     }
     
@@ -46,11 +48,9 @@ struct ZipItApp: App {
     private func shouldQuickExtract() -> Bool {
         let arguments = CommandLine.arguments
         
-        // Perform quick extract if launched with specific command-line flags.
-        // The check for `NSApp.currentEvent` is a less reliable method and will be improved.
-        return arguments.contains("--quick-extract") ||
-               arguments.contains("-q") ||
-               NSApp.currentEvent?.type == .keyDown // Detects Cmd+Down, but can be unreliable.
+        // Only perform quick extract if explicitly requested via command-line flags
+        // Remove the NSApp.currentEvent check as it's unreliable and prevents normal app launch
+        return arguments.contains("--quick-extract") || arguments.contains("-q")
     }
     
     /// Performs the extraction in the background without showing the main UI.

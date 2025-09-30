@@ -15,8 +15,6 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 - 🚫 **Bloated interface**
 - 🚫 **Outdated user experience**
 
-> *"The Unarchiver has started showing ads and shit. So now in a modern era where AI can help you create your own Apps within minutes, we just created this app that people can use for free."* - [Reddit Discussion](https://www.reddit.com/r/MacOS/comments/1dug070/whats_a_good_unarchiver_alternative_do_i_even/)
-
 ## ✨ The Solution
 
 **ZipIt** is a lightweight, modern archive manager that:
@@ -57,7 +55,7 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 ## 📥 Installation
 
 ### Option 1: Download Pre-built App (Recommended)
-1. **Download** [`ZipIt.zip`](ZipIt.zip) from this repository
+1. **Download** [`ZipIt.app`](ZipIt.app) from this repository
 2. **Extract** the ZIP file (macOS handles this natively)
 3. **Move** `ZipIt.app` to your `/Applications` folder
 4. **Right-click** the app → "Open" (to bypass Gatekeeper on first run)
@@ -135,36 +133,9 @@ open ZipIt.xcodeproj
 
 We welcome contributions! This app was built quickly with AI assistance, proving that modern development tools can solve real user problems in minutes.
 
-### How to Contribute
-1. **Fork** this repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Ideas for Contributions
-- 🎨 **UI Improvements** - Better icons, animations, themes
-- 🗜️ **New Formats** - Support for CAB, ISO, DMG, etc.
-- 🗜️ **7Z Compression** - Add compression support for 7-Zip format
-- ⚡ **Performance** - Faster extraction algorithms
-- 🌐 **Localization** - Multi-language support
-- 🔧 **Features** - Batch processing, password protection for compression
-
 ## 📝 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 🎉 Success Story
-
-This entire application was conceptualized, designed, and built **in a single coding session** using:
-- **Modern AI assistance** for rapid development
-- **Swift Package Manager** for dependency management  
-- **SwiftUI** for native macOS interface
-- **Open source libraries** for archive format support
-
-**Total development time: ~1 hours** ⏰
-
-This proves that in 2025, individual developers can quickly create professional apps that solve real user problems, completely free from corporate bloatware and advertisements.
 
 ## 🙏 Acknowledgments
 
@@ -178,7 +149,7 @@ This proves that in 2025, individual developers can quickly create professional 
 
 ### ⭐ If ZipIt helps you, please star this repository!
 
-**Made with ❤️ for the macOS community by Kodareken (https://github.com/kodareken) & Claude Sonnet**
+**Made with ❤️ for the macOS community by Kodareken (https://github.com/kodareken)
 
 *Free software, no ads, no tracking, no BS. Just a tool that works.*
  

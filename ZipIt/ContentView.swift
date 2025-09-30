@@ -133,6 +133,8 @@ struct ContentView: View {
     @State private var selectedCompressionFormat: ArchiveFormat = .zip
     /// Controls which tab is currently selected (0 = Extract, 1 = Compress)
     @State private var selectedTab = 0
+    /// Cached size of the selection (bytes) for UI gating
+    @State private var selectionSizeBytes: Int64 = 0
     /// A boolean to control the presentation of the destination folder picker.
     @State private var showDestinationPicker = false
     /// A boolean to control the presentation of the files picker for compression.
@@ -147,11 +149,28 @@ struct ContentView: View {
     }
     /// Controls the presentation of the alert.
     @State private var showAlert = false
+    /// Controls the expansion of format info in Extract tab
+    @State private var showExtractFormatInfo = false
+    /// Controls the expansion of format info in Compress tab
+    @State private var showCompressFormatInfo = false
     
     /// A list of supported archive file extensions.
     let supportedFormats = ["zip", "tar", "gz", "7z", "rar"]
-    /// A list of supported compression formats (RAR is read-only)
-    let compressionFormats: [ArchiveFormat] = [.zip, .tar, .gzip, .sevenZip, .rar]
+    /// A list of supported compression formats for v1 (GZIP and 7Zip disabled, RAR extraction-only)
+    let compressionFormats: [ArchiveFormat] = [.zip, .tar]
+    
+    /// Format guide information
+    let formatInfo = """
+    **ZIP** - Universal format for multiple files/folders. Best for email attachments and cross-platform compatibility.
+    
+    **TAR** - Unix/Linux standard for software distribution and large data transfers.
+    
+    **RAR** - Extraction only (Windows-based format). Can split large files into chunks.
+    
+    **7Z** - Maximum compression for storage. Extraction only.
+    
+    **GZIP** - Single file compression for large file transfers.
+    """
     
     /// The main layout of the content view.
     var body: some View {
@@ -171,6 +190,31 @@ struct ContentView: View {
                     Text("Compress")
                 }
                 .tag(1)
+        }
+        .onChange(of: selectedArchiveURL) {
+            // Auto-select destination to same folder when a new archive is chosen
+            autoSelectDestination()
+        }
+        // Keep output extension in sync with the selected format
+        .onChange(of: selectedCompressionFormat) { _, newFormat in
+            // Update output extension
+            if let url = selectedOutputArchiveURL {
+                let expected = extensionForFormat(newFormat)
+                if url.pathExtension.lowercased() != expected {
+                    let updated = url.deletingPathExtension().appendingPathExtension(expected)
+                    selectedOutputArchiveURL = updated
+                }
+            }
+        }
+        // Reset/wipe state when switching between Extract and Compress
+        .onChange(of: selectedTab) { _, newTab in
+            if newTab == 0 {
+                // Arriving to Extract tab
+                if extractor.isCompressing == false { resetCompressionUI() }
+            } else if newTab == 1 {
+                // Arriving to Compress tab
+                if extractor.isExtracting == false { resetExtractionUI() }
+            }
         }
         .onReceive(appState.$selectedArchiveURL) { url in
             if let url = url {
@@ -194,22 +238,20 @@ struct ContentView: View {
                 print("Error selecting destination: \(error)")
             }
         }
-        .fileImporter(isPresented: $showFilesPicker, allowedContentTypes: [.item, .folder], allowsMultipleSelection: true) { result in
+        .fileImporter(isPresented: $showFilesPicker, allowedContentTypes: [.item, .folder], allowsMultipleSelection: false) { result in
             switch result {
             case .success(let urls):
-                selectedFilesToCompress = urls
-                print("Files selected for compression: \(urls)")
+                // Single-selection policy: take only the first item
+                selectedFilesToCompress = Array(urls.prefix(1))
+                
+                Task {
+                    await updateSelectionSizeAndDefaultOutput()
+                    // Note: Save panel will be shown when user clicks "Create Archive"
+                    // This allows them to select the format first
+                }
+                print("Item selected for compression: \(selectedFilesToCompress.first?.path ?? "none")")
             case .failure(let error):
-                print("Error selecting files: \(error)")
-            }
-        }
-        .fileExporter(isPresented: $showOutputPicker, document: EmptyDocument(), contentType: contentTypeForFormat(selectedCompressionFormat)) { result in
-            switch result {
-            case .success(let url):
-                selectedOutputArchiveURL = url
-                print("Output archive location selected: \\(url)")
-            case .failure(let error):
-                print("Error selecting output location: \\(error)")
+                print("Error selecting item: \(error)")
             }
         }
         .task {
@@ -219,8 +261,11 @@ struct ContentView: View {
                 queue: .main
             ) { notification in
                 if let filePaths = notification.userInfo?["files"] as? [String] {
-                    selectedFilesToCompress = filePaths.map { URL(fileURLWithPath: $0) }
-                    selectedTab = 1
+                    DispatchQueue.main.async {
+                        selectedFilesToCompress = filePaths.map { URL(fileURLWithPath: $0) }
+                        selectedTab = 1
+                        Task { await updateSelectionSizeAndDefaultOutput() }
+                    }
                 }
             }
         }
@@ -284,8 +329,19 @@ struct ContentView: View {
     /// The section for selecting the archive file.
     private var archiveSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Archive File")
-                .font(.headline)
+            HStack {
+                Text("Archive File")
+                    .font(.headline)
+                
+                Spacer()
+                
+                Button(action: { showExtractFormatInfo = true }) {
+                    Image(systemName: "info.circle")
+                        .foregroundColor(.secondary)
+                }
+                .buttonStyle(.plain)
+                .help("Format information")
+            }
             
             ArchiveFilePicker(selectedURL: $selectedArchiveURL)
                 .accessibilityLabel("Select archive file")
@@ -293,6 +349,11 @@ struct ContentView: View {
             Text("Supported formats: \(supportedFormats.joined(separator: ", "))")
                 .font(.caption)
                 .foregroundColor(.secondary)
+        }
+        .alert("Archive Format Guide", isPresented: $showExtractFormatInfo) {
+            Button("OK") { }
+        } message: {
+            Text(formatInfo)
         }
     }
     
@@ -314,6 +375,7 @@ struct ContentView: View {
             }
             .buttonStyle(.bordered)
             .accessibilityLabel("Select destination folder")
+            .disabled(selectedArchiveURL == nil || ArchiveFormat.detect(from: selectedArchiveURL!) == .unknown)
         }
     }
     
@@ -438,48 +500,26 @@ struct ContentView: View {
                 .font(.headline)
                 .foregroundColor(.secondary)
         }
+        .padding(.top, 8)
     }
     
-    /// The section for selecting files to compress
+    /// The section for selecting a single file or folder to compress (single-selection policy)
     private var filesSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Files to Compress")
+            Text("Item to Compress")
                 .font(.headline)
-            
+
             HStack {
-                Button("Add Files") { 
+                Button("Select File or Folder…") {
                     showFilesPicker = true
-                    selectionMode = .files
-                }
-                .buttonStyle(.bordered)
-                
-                Button("Add Folder") {
-                    showFilesPicker = true
-                    selectionMode = .folders
                 }
                 .buttonStyle(.bordered)
             }
-            
-            if !selectedFilesToCompress.isEmpty {
-                Text("Selected: \(selectedFilesToCompress.count) items")
+
+            if let first = selectedFilesToCompress.first {
+                Text("Selected: \(first.lastPathComponent) • \(formatBytes(selectionSizeBytes))")
                     .font(.caption)
                     .padding(.top, 4)
-            
-                ScrollView {
-                    LazyVStack(alignment: .leading, spacing: 4) {
-                        ForEach(selectedFilesToCompress.prefix(5), id: \.self) { url in
-                            Text("• \(url.lastPathComponent)")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                        }
-                        if selectedFilesToCompress.count > 5 {
-                            Text("• and \(selectedFilesToCompress.count - 5) more...")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                        }
-                    }
-                }
-                .frame(maxHeight: 100)
             }
         }
     }
@@ -487,36 +527,69 @@ struct ContentView: View {
     /// The section for selecting compression format
     private var formatSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Archive Format")
-                .font(.headline)
+            HStack {
+                Text("Archive Format")
+                    .font(.headline)
+                
+                Spacer()
+                
+                Button(action: { showCompressFormatInfo = true }) {
+                    Image(systemName: "info.circle")
+                        .foregroundColor(.secondary)
+                }
+                .buttonStyle(.plain)
+                .help("Format information")
+            }
             
             Picker("Format", selection: $selectedCompressionFormat) {
                 ForEach(compressionFormats, id: \.self) { format in
-                    Text(format.rawValue.uppercased()).tag(format)
+                    Text(displayName(for: format)).tag(format)
                 }
             }
             .pickerStyle(SegmentedPickerStyle())
-            
-            Text("Experimental: RAR 4 (store-only) writer — no external tools required")
-                .font(.caption)
-                .foregroundColor(.secondary)
+        }
+        .alert("Compression Format Guide", isPresented: $showCompressFormatInfo) {
+            Button("OK") { }
+        } message: {
+            Text("**ZIP** - Best for email and cross-platform sharing. Universal support.\n\n**TAR** - Unix/Linux standard for software distribution.")
         }
     }
     
-    /// The section for selecting output location
+    /// The section for selecting output location (disabled in v1: always same-folder)
     private var outputSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Save Archive As")
+            Text("Output Location")
                 .font(.headline)
             
-            Button(action: { showOutputPicker = true }) {
+            if let outputURL = selectedOutputArchiveURL {
+                // Show the folder location
                 HStack {
                     Image(systemName: "folder")
-                    Text(selectedOutputArchiveURL?.lastPathComponent ?? "Choose location...")
+                    Text(outputURL.deletingLastPathComponent().lastPathComponent)
                 }
                 .frame(maxWidth: .infinity)
+                .foregroundColor(.secondary)
+                
+                // Show the archive filename separately
+                HStack {
+                    Image(systemName: "doc.badge.gearshape")
+                    Text(outputURL.lastPathComponent)
+                }
+                .frame(maxWidth: .infinity)
+                .font(.caption)
+                .foregroundColor(.secondary)
+            } else {
+                HStack {
+                    Image(systemName: "folder")
+                    Text("Auto (same folder as selection)")
+                }
+                .frame(maxWidth: .infinity)
+                .foregroundColor(.secondary)
             }
-            .buttonStyle(.bordered)
+            
+            Text("Archive will be created in the same folder as the selected item.")
+                .font(.caption)
+                .foregroundColor(.secondary)
         }
     }
     
@@ -534,7 +607,8 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
         }
         .buttonStyle(.borderedProminent)
-        .disabled(selectedFilesToCompress.isEmpty || selectedOutputArchiveURL == nil || extractor.isCompressing)
+            .disabled(selectedFilesToCompress.isEmpty || selectedOutputArchiveURL == nil || extractor.isCompressing)
+            .help("Archive will be created in the same folder as the selected item")
     }
     
     /// The section that displays the progress of the compression.
@@ -557,6 +631,45 @@ struct ContentView: View {
     
     // MARK: - Helper Methods
     
+    /// Returns preferred file extension for the selected format
+    private var overLimitForRAR: Bool { selectionSizeBytes > (1 << 30) }
+    
+    private func extensionForFormat(_ format: ArchiveFormat) -> String {
+        switch format {
+        case .zip: return "zip"
+        case .tar: return "tar"
+        case .gzip: return "gz"
+        case .sevenZip: return "7z"
+        case .rar, .unknown: return "rar"
+        }
+    }
+
+    private func displayName(for format: ArchiveFormat) -> String {
+        switch format {
+        case .sevenZip: return "7Zip"
+        case .gzip: return "GZIP"
+        default: return format.rawValue.uppercased()
+        }
+    }
+    
+    /// Resets the extraction UI state
+    private func resetExtractionUI() {
+        selectedArchiveURL = nil
+        selectedDestinationURL = nil
+        extractionState = .idle
+        extractor.progress = 0.0
+        showAlert = false
+    }
+    
+    /// Resets the compression UI state
+    private func resetCompressionUI() {
+        selectedFilesToCompress.removeAll()
+        selectedOutputArchiveURL = nil
+        compressionState = .idle
+        extractor.progress = 0.0
+        showAlert = false
+    }
+    
     /// Gets the alert message based on the current states
     private var alertMessage: String {
         switch extractionState {
@@ -571,27 +684,107 @@ struct ContentView: View {
         }
     }
     
-    /// Gets the appropriate UTType for the compression format
-    private func contentTypeForFormat(_ format: ArchiveFormat) -> UTType {
-        switch format {
-        case .zip:
-            return .zip
-        case .tar:
-            return UTType(filenameExtension: "tar") ?? .data
-        case .gzip:
-            return UTType(filenameExtension: "tgz") ?? .data
-        case .sevenZip:
-            return UTType(filenameExtension: "7z") ?? .data
-        default:
-            return .data
+    /// Compute total size of selection and set/refresh a default output URL when needed
+    private func updateSelectionSizeAndDefaultOutput() async {
+        let size = await computeTotalSize(of: selectedFilesToCompress)
+        await MainActor.run {
+            self.selectionSizeBytes = size
+            // Always compute default output next to the single selected item
+            if let first = self.selectedFilesToCompress.first {
+                let ext = self.extensionForFormat(self.selectedCompressionFormat)
+                
+                // Get the base name (without extension for files, or folder name)
+                var baseName = first.lastPathComponent
+                
+                // If it's a file, remove its extension
+                if !first.hasDirectoryPath && baseName.contains(".") {
+                    baseName = first.deletingPathExtension().lastPathComponent
+                }
+                
+                // Create archive in the same folder as the source
+                let parentFolder = first.deletingLastPathComponent()
+                let archiveName = "\(baseName).\(ext)"
+                let url = parentFolder.appendingPathComponent(archiveName)
+                
+                print("📁 Source: \(first.path)")
+                print("📦 Output will be: \(url.path)")
+                
+                self.selectedOutputArchiveURL = url
+            } else {
+                self.selectedOutputArchiveURL = nil
+            }
         }
+    }
+    
+    /// Chooses the output archive location without creating a file yet
+    private func chooseOutputLocation() {
+        let ext = extensionForFormat(selectedCompressionFormat)
+        let defaultBaseName: String = {
+            if let first = selectedFilesToCompress.first { return first.deletingPathExtension().lastPathComponent }
+            return "Archive"
+        }()
+        let panel = NSSavePanel()
+        if let t = UTType(filenameExtension: ext) {
+            panel.allowedContentTypes = [t]
+        }
+        panel.canCreateDirectories = true
+        panel.isExtensionHidden = false
+        panel.nameFieldStringValue = "\(defaultBaseName).\(ext)"
+        if let dir = selectedFilesToCompress.first?.deletingLastPathComponent() {
+            panel.directoryURL = dir
+        }
+        if panel.runModal() == .OK, let url = panel.url {
+            selectedOutputArchiveURL = url
+            NSLog("📦 Save panel selected URL: %@", url.path)
+            NSLog("📦 Parent folder: %@", url.deletingLastPathComponent().path)
+            NSLog("📦 Archive filename: %@", url.lastPathComponent)
+        } else {
+            NSLog("❌ Save panel cancelled")
+        }
+    }
+    
+    /// Compute total size of URLs (files and directories) off the main thread
+    private func computeTotalSize(of urls: [URL]) async -> Int64 {
+        return await withTaskGroup(of: Int64.self) { group -> Int64 in
+            for url in urls {
+                group.addTask { sizeOfURL(url) }
+            }
+            var total: Int64 = 0
+            for await part in group { total += part }
+            return total
+        }
+    }
+    
+    nonisolated private func sizeOfURL(_ url: URL) -> Int64 {
+        var total: Int64 = 0
+        let fm = FileManager.default
+        if url.hasDirectoryPath {
+            if let enumerator = fm.enumerator(at: url, includingPropertiesForKeys: [.isRegularFileKey, .fileSizeKey]) {
+                for case let fileURL as URL in enumerator {
+                    if (try? fileURL.resourceValues(forKeys: [.isRegularFileKey]).isRegularFile) == true {
+                        let s = (try? fileURL.resourceValues(forKeys: [.fileSizeKey]).fileSize).map(Int64.init) ?? 0
+                        total += s
+                    }
+                }
+            }
+        } else {
+            total = (try? url.resourceValues(forKeys: [.fileSizeKey]).fileSize).map(Int64.init) ?? 0
+        }
+        return total
+    }
+    
+    private func formatBytes(_ bytes: Int64) -> String {
+        let fmt = ByteCountFormatter()
+        fmt.allowedUnits = [.useBytes, .useKB, .useMB, .useGB]
+        fmt.countStyle = .file
+        return fmt.string(fromByteCount: bytes)
     }
     
     /// Performs the compression operation
     private func compressFiles() {
         guard !selectedFilesToCompress.isEmpty,
               let outputURL = selectedOutputArchiveURL else {
-            compressionState = .failure("Please select files and output location.")
+            compressionState = .failure("Please select a file or folder to compress.")
             showAlert = true
             return
         }
@@ -638,6 +831,7 @@ struct EmptyDocument: FileDocument {
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
         FileWrapper(regularFileWithContents: data)
     }
+
 }
 
 #Preview {

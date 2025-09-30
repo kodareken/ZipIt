@@ -55,12 +55,12 @@
 			path = ZipIt;
 			sourceTree = "<group>";
 		};
-		84006E812E79D3D1007BAF8E /* ZipItTests */ = {
+		84F8B2FB2E8BFB7D00AEAC05 /* ZipItTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ZipItTests;
 			sourceTree = "<group>";
 		};
-		84006E8B2E79D3D1007BAF8E /* ZipItUITests */ = {
+		84F8B2FF2E8BFB8D00AEAC05 /* ZipItUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ZipItUITests;
 			sourceTree = "<group>";
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				84006E722E79D3D1007BAF8E /* ZipIt */,
-				84006E812E79D3D1007BAF8E /* ZipItTests */,
-				84006E8B2E79D3D1007BAF8E /* ZipItUITests */,
+				84F8B2FB2E8BFB7D00AEAC05 /* ZipItTests */,
+				84F8B2FF2E8BFB8D00AEAC05 /* ZipItUITests */,
 				84006E712E79D3D1007BAF8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,9 +158,6 @@
 			dependencies = (
 				84006E802E79D3D1007BAF8E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				84006E812E79D3D1007BAF8E /* ZipItTests */,
-			);
 			name = ZipItTests;
 			packageProductDependencies = (
 			);
@@ -180,9 +177,6 @@
 			);
 			dependencies = (
 				84006E8A2E79D3D1007BAF8E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				84006E8B2E79D3D1007BAF8E /* ZipItUITests */,
 			);
 			name = ZipItUITests;
 			packageProductDependencies = (

@@ -148,7 +148,6 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/include/BitByteData-Swift.h",
-        "-color-diagnostics",
         "-swift-version",
         "5",
         "-plugin-path",
@@ -813,7 +812,6 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/include/SWCompression-Swift.h",
-        "-color-diagnostics",
         "-swift-version",
         "5",
         "-plugin-path",
@@ -1623,7 +1621,6 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/include/Unrar-Swift.h",
-        "-color-diagnostics",
         "-swift-version",
         "5",
         "-plugin-path",
@@ -1758,7 +1755,6 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/include/Zip-Swift.h",
-        "-color-diagnostics",
         "-swift-version",
         "5",
         "-plugin-path",
@@ -1827,6 +1823,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ArchiveExtractor.swift"
         },
         {
@@ -1836,18 +1836,6 @@
         {
           "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/Data+Utilities.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARArchiver.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARCompression.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARTester.swift"
         },
         {
           "kind" : "file",
@@ -1878,12 +1866,10 @@
       "moduleName" : "ZipIt",
       "moduleOutputPath" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Modules/ZipIt.swiftmodule",
       "objects" : [
+        "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/AppDelegate.swift.o",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ContentView.swift.o",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.swift.o",
-        "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.swift.o",
-        "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.swift.o",
-        "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.swift.o",
         "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o"
       ],
       "otherArguments" : [
@@ -1919,7 +1905,6 @@
         "-entry-point-function-name",
         "-Xfrontend",
         "ZipIt_main",
-        "-color-diagnostics",
         "-swift-version",
         "6",
         "-plugin-path",
@@ -1958,6 +1943,10 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o"
         },
         {
@@ -1970,18 +1959,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ZipItApp.swift.o"
         },
         {
@@ -1991,12 +1968,10 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/AppDelegate.swift",
         "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ArchiveExtractor.swift",
         "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ContentView.swift",
         "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/Data+Utilities.swift",
-        "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARArchiver.swift",
-        "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARCompression.swift",
-        "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARTester.swift",
         "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ZipItApp.swift"
       ],
       "tempsPath" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build",
@@ -2046,7 +2021,6 @@
       "-emit-objc-header",
       "-emit-objc-header-path",
       "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/BitByteData.build/include/BitByteData-Swift.h",
-      "-color-diagnostics",
       "-swift-version",
       "5",
       "-plugin-path",
@@ -2211,7 +2185,6 @@
       "-emit-objc-header",
       "-emit-objc-header-path",
       "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/SWCompression.build/include/SWCompression-Swift.h",
-      "-color-diagnostics",
       "-swift-version",
       "5",
       "-plugin-path",
@@ -2283,7 +2256,6 @@
       "-emit-objc-header",
       "-emit-objc-header-path",
       "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Unrar.build/include/Unrar-Swift.h",
-      "-color-diagnostics",
       "-swift-version",
       "5",
       "-plugin-path",
@@ -2355,7 +2327,6 @@
       "-emit-objc-header",
       "-emit-objc-header-path",
       "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Zip.build/include/Zip-Swift.h",
-      "-color-diagnostics",
       "-swift-version",
       "5",
       "-plugin-path",
@@ -2398,12 +2369,10 @@
       "-package-name",
       "zipit",
       "-c",
+      "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/AppDelegate.swift",
       "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ArchiveExtractor.swift",
       "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ContentView.swift",
       "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/Data+Utilities.swift",
-      "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARArchiver.swift",
-      "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARCompression.swift",
-      "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARTester.swift",
       "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ZipItApp.swift",
       "-I",
       "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/Modules",
@@ -2439,7 +2408,6 @@
       "-entry-point-function-name",
       "-Xfrontend",
       "ZipIt_main",
-      "-color-diagnostics",
       "-swift-version",
       "6",
       "-plugin-path",
@@ -3060,6 +3028,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/ArchiveExtractor.swift"
         },
         {
@@ -3069,18 +3041,6 @@
         {
           "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/Data+Utilities.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARArchiver.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARCompression.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/ZipIt/RARTester.swift"
         },
         {
           "kind" : "file",
@@ -3782,6 +3742,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/ArchiveExtractor.swift.o"
         },
         {
@@ -3791,18 +3755,6 @@
         {
           "kind" : "file",
           "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/Data+Utilities.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARArchiver.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARCompression.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/admin/Code/4.github_repos/ZipIt/.build/arm64-apple-macosx/debug/ZipIt.build/RARTester.swift.o"
         },
         {
           "kind" : "file",

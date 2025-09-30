@@ -67,3 +67,6 @@ playground.xcworkspace
 
 # Swift Package Manager dependencies
 .swiftpm/
+
+# Note: ZipIt.app (built binary) is intentionally committed for easy download
+# Do NOT add *.app to this file

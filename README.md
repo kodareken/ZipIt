@@ -23,19 +23,19 @@ macOS handles ZIP files natively, but **doesn't support RAR files** out of the b
 - ✅ **100% Free & Open Source** - No ads, ever
 - ✅ **Native macOS Integration** - Right-click → "Open With" support
 - ✅ **Modern SwiftUI Interface** - Clean, intuitive design
-- ✅ **RAR Support** - Extract RAR files; Experimental write (RAR 4 store-only, no external tools)
+- ✅ **RAR Support** - Extract RAR files (compression not supported - requires RARLAB license)
 - ✅ **Quick Extract** - Cmd+Down Arrow for instant extraction
-- ✅ **Full Archive Management** - Extract AND create ZIP, 7Z, TAR, GZ archives
-- ✅ **Multiple Formats** - ZIP, RAR, 7Z, TAR, GZ support
+- ✅ **Create Archives** - ZIP and TAR compression. 7Z and GZ compression coming later.
+- ✅ **Multiple Formats** - ZIP, RAR, 7Z, TAR, GZ (extraction for all; ZIP/TAR compression supported)
 
 ## 🚀 Features
 
 ### Archive Format Support
 - **ZIP** - Full extraction and compression support
-- **RAR** - Extraction only (compression is proprietary) 
-- **7Z** - Full extraction and compression support
 - **TAR** - Full extraction and compression support
-- **GZ/TGZ** - Full extraction and compression support
+- **RAR** - Extraction only (compression requires proprietary RARLAB license)
+- **7Z** - Extraction support. Compression planned.
+- **GZ/TGZ** - Extraction support. Compression planned.
 
 ### macOS Integration
 - **File Association** - Set ZipIt as default for archive types
@@ -80,10 +80,10 @@ open ZipIt.xcodeproj
 
 ### Basic Usage - Compression
 1. **Launch ZipIt** → **Compress Tab** 
-2. **Select Files** - Choose multiple files and/or folders
-3. **Choose Format** - Pick ZIP, 7Z, TAR, or GZ format
-4. **Set Output** - Choose where to save the archive
-5. **Create Archive** - Hit the compress button and watch the progress
+2. **Select Item** - Choose exactly one file or one folder (put multiple items in a folder first)
+3. **Choose Format** - Pick ZIP or TAR
+4. **Output Location** - ZipIt v1 always saves next to your selection
+5. **Create Archive** - Hit the button and watch the progress
 
 ### Pro Usage: File Association
 1. **Right-click** any RAR file in Finder
@@ -96,14 +96,28 @@ open ZipIt.xcodeproj
 2. **Press Cmd+Down Arrow** → Instantly extracts to same folder
 3. **No UI needed** - Perfect for batch processing
 
+## 🧪 Developer Testing
+
+### Running Tests
+- Run the whole test suite (unit + UI):
+  ```bash
+  xcodebuild test -project ZipIt.xcodeproj -scheme ZipIt -quiet
+  ```
+
+- Test RAR extraction with sample files:
+  ```bash
+  # RAR files can be extracted - try it with any sample RAR from the test suite
+  unrar l "ZipItTests/Test files for supported formats/Samples .rar files/sample-1.rar"
+  ```
+
 ## 🛠️ Technical Details
 
 ### Built With
 - **Swift 5.9+** - Modern Swift language features
 - **SwiftUI** - Native macOS interface framework
-- **Unrar.swift** - RAR extraction library
-- **Internal RAR 4 writer (store-only, clean-room)**
-- **SWCompression** - 7Z and TAR support
+- **Unrar.swift** - RAR extraction library (extraction only)
+- **SWCompression** - 7Z and TAR support (7Z compression planned; TAR compression supported)
+- **Zip** - ZIP compression and extraction
 - **Swift Package Manager** - Dependency management
 
 ### Architecture
@@ -131,6 +145,7 @@ We welcome contributions! This app was built quickly with AI assistance, proving
 ### Ideas for Contributions
 - 🎨 **UI Improvements** - Better icons, animations, themes
 - 🗜️ **New Formats** - Support for CAB, ISO, DMG, etc.
+- 🗜️ **7Z Compression** - Add compression support for 7-Zip format
 - ⚡ **Performance** - Faster extraction algorithms
 - 🌐 **Localization** - Multi-language support
 - 🔧 **Features** - Batch processing, password protection for compression

@@ -4,9 +4,10 @@
 [![Platform](https://img.shields.io/badge/Platform-macOS%2012+-blue.svg)](https://developer.apple.com/macos/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**ZipIt** is a modern, free, and open-source archive extractor for macOS built with SwiftUI. Created as a clean alternative to The Unarchiver, ZipIt provides native macOS integration without ads or bloatware.
 
 <img width="300" height="300" alt="appicon" src="https://github.com/user-attachments/assets/2b26c4af-a037-425a-9656-96e3df78f0ce" />
+
+**ZipIt** is a modern, free, and open-source archive extractor for macOS built with SwiftUI. Created as a clean alternative to The Unarchiver, ZipIt provides native macOS integration without ads or bloatware.
 
 ## 🎯 The Problem
 

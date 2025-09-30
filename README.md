@@ -6,7 +6,7 @@
 
 **ZipIt** is a modern, free, and open-source archive extractor for macOS built with SwiftUI. Created as a clean alternative to The Unarchiver, ZipIt provides native macOS integration without ads or bloatware.
 
-<img width="1024" height="1024" alt="appicon" src="https://github.com/user-attachments/assets/2b26c4af-a037-425a-9656-96e3df78f0ce" />
+<img width="300" height="300" alt="appicon" src="https://github.com/user-attachments/assets/2b26c4af-a037-425a-9656-96e3df78f0ce" />
 
 ## 🎯 The Problem
 
